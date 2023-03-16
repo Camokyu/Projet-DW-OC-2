@@ -1,0 +1,85 @@
+/*NORMES*/
+
+body{
+    width: 100%;
+    max-width: 1400px;
+    margin: auto;
+}
+h1{
+    font-family: 'Raleway', 'Regular', sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 25.83px;
+}
+h2{
+    font-family: 'Raleway', 'Regular', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 18.78px;
+}
+h3{
+    font-family: 'Raleway', 'Regular', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18.78px;
+}
+a{
+    text-decoration: none;
+    color: #000000;
+}
+.fa-solid {
+    color: #0065FC;
+}
+main{
+    width: 100%;
+    height: 626px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+.boite_hebergements{
+    width: 60%;
+    height: 626px;
+    display: flex;
+}
+aside{
+    width: 30%;
+    height: 626px;
+    display: flex;
+}
+.boite_activites{
+    width: 100%;
+    height: 500px;
+    display: flex;
+}
+footer{
+    width: 100%;
+    height: 225px;
+    display: flex;
+    background-color: #F2F2F2;
+}
+
+/*HEADER*/
+
+header{
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+    align-items: center;
+}
+.logo{
+    height: 19px;
+    width: 61.09px;
+}
+nav{
+    display: flex;
+}
+.lien_h:active .lien_a:active {border-top: 2px solid #0065FC ;}
+ul{
+    list-style-type: none;
+    display: flex;
+    flex-flow: row;
+}
+li{
+    padding: 0 3px 0 3px;
+}

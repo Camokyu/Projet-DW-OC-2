@@ -9,23 +9,24 @@
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link href="Fonts/static/Raleway-Regular.ttf" rel="fontt">
    <script src="https://kit.fontawesome.com/35ffb2fe97.js" crossorigin="anonymous"></script>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     </head>
 
     <body>
 
-      <header>
+      <header class="d-flex">
         <img class="logo" src="Images Booki/logo/Booki.png" alt="Logo de la start-up Booki" /> 
 
         <nav>
         
-            <ul>
+            <ul class="d-flex">
 
                 <li class="lien_h">
-                    Hébergements
+                   <a href="#ancre_hebergements">Hébergements</a>
                 </li>
                 <li class="lien_a">
-                    Activités    
+                    <a href="#ancre_activites">Activités </a>   
                 </li>
                 
             </ul>
@@ -38,7 +39,7 @@
 
     <section>
         <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-        <p>En pleine nature ou en plein centre-ville</p>
+        <p>En plein centre-ville ou en pleine nature</p>
 		 
         <form class="bloc recherche">
             <i class="fa-solid fa-location-dot"></i>
@@ -50,23 +51,23 @@
     <section class="d-flex ligne_filtres">
 		<p>Filtres</p>
 	
-		<div>
+		<div class="d-flex bouton_filtres">
 		   <div class="logo_bouton"><i class="fa-solid fa-money-bill-wave"></i></div> 
 			<div class="texte_bouton"><p>Économique</p></div>       
 		</div>
 
-		<div>
+		<div class="d-flex bouton_filtres">
 			<div class="logo_bouton"><i class="fa-solid fa-person"></i></div> 
 			<div class="texte_bouton"><p>Familial</p></div>       
 		 </div>
 
 
-		 <div>
+		 <div class="d-flex bouton_filtres">
 			<div class="logo_bouton"><i class="fa-solid fa-heart"></i></div> 
 			 <div class="texte_bouton"><p>Romantique</p></div>         
 		 </div>
 
-				<div>
+		<div class="d-flex bouton_filtres">
 		   <div class="logo_bouton"><i class="fa-solid fa-dog"></i></div> 
 			<div class="texte_bouton"><p>Animaux autorisés</p></div>         
 		</div>
@@ -81,7 +82,7 @@
     <section class="boite_heb_pop d-flex">
         <section class="boite_hebergements d-flex">
 
-            <div class="titre_hebergements"><h2>Hébergements à Marseille</h2></div>
+            <div class="titre_hebergements"><h2 id="ancre_hebergements">Hébergements à Marseille</h2></div>
 
             <article class="carte_hebergements"> 
                 <img class="image_hebergements" src="Images Booki/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg"> 
@@ -131,6 +132,8 @@
 
         </section>   
 
+        <!--DÉBUT BOÎTE POPULAIRES-->
+
         <aside class="boite_populaires d-flex">
             <div class="logo_populaires d-flex">
 				<h1 class="titre_populaires">Les plus populaires</h1>
@@ -162,9 +165,11 @@
         </aside>
     </section>
 
+    <!--DÉBUT BOÎTE ACTIVITÉS-->
+
 	<section class="boite_activites">
 		
-		<h2 class="titre_activites">Activités à Marseille</h2>
+		<h2 id="ancre_activites" class="titre_activites">Activités à Marseille</h2>
 		
 		<div class="d-flex">
 			<article class="carte_activites">
@@ -191,6 +196,8 @@
 	</section>
 
     </main>
+
+<!--DÉBUT FOOTER-->
 
     <footer>
 

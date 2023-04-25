@@ -179,7 +179,18 @@ input::placeholder{
 .boite_heb_pop{
     justify-content: space-evenly;
     align-items: center;
-    /*gap: 175px;*/
+}
+
+.texte_prix{
+    flex-flow: row nowrap;
+}
+
+.symbole_euro{
+    font-weight: 600;
+}
+
+.cinquieme_etoile{
+    color: gainsboro;
 }
 
 /*HÉBERGEMENTS*/

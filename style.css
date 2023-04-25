@@ -5,28 +5,34 @@ body{
     max-width: 1400px;
     margin: auto;
 }
+
 *{
     font-family: 'Raleway', 'Regular', sans-serif;
 }
+
 h1{
     font-weight: 700;
     font-size: 22px;
     line-height: 25.83px;
 }
+
 h2{
     font-weight: 700;
     font-size: 16px;
     line-height: 18.78px;
 }
+
 h3{
     font-weight: 400;
     font-size: 16px;
     line-height: 18.78px;
 }
+
 a{
     text-decoration: none;
     color: #000000;
 }
+
 .fa-solid {
     color: #0065FC;
 }
@@ -62,18 +68,21 @@ footer{
     padding: 20px;
     display: block;
 }
+
 .header .link.active {
     color: blue;
     box-shadow: 0px 2px 0px 0px #0065FC inset;
     -webkit-box-shadow: 0px 2px 0px 0px #0065FC inset;
     -moz-box-shadow: 0px 2px 0px 0px #0065FC inset;
 }
+
 .header .link:hover {
     color: blue;
     box-shadow: 0px 2px 0px 0px #0065FC inset;
     -webkit-box-shadow: 0px 2px 0px 0px #0065FC inset;
     -moz-box-shadow: 0px 2px 0px 0px #0065FC inset;
 }
+
 .logo {
     height: 19px;
     width: 61.09px;
@@ -81,7 +90,9 @@ footer{
     padding: 0 0 0 55px;
 }
 
+
 /*MAIN*/
+
 
 .boite_contenu_main{
     flex-flow: column;
@@ -91,7 +102,9 @@ footer{
     padding: 0 0 0 55px;
 }
 
+
 /*BLOC RECHERCHE*/
+
 
 .bloc_recherche{
     padding: 0px;
@@ -141,6 +154,7 @@ input::placeholder{
     margin: 25px;
     padding: 0 0 0 25px;
 }
+
 .ligne_filtres p {
     margin: 5px;
 }
@@ -174,7 +188,9 @@ input::placeholder{
     padding: 5px 10px 5px 10px;
 }
 
+
 /*HÉBERGEMENTS ET POPULAIRES*/
+
 
 .boite_heb_pop{
     justify-content: space-evenly;
@@ -193,7 +209,9 @@ input::placeholder{
     color: gainsboro;
 }
 
+
 /*HÉBERGEMENTS*/
+
 
 .titre_hebergements{
      width: 100%;
@@ -231,7 +249,9 @@ input::placeholder{
     padding: 0 0 0 17px;
  }
 
+
 /*POPULAIRES*/
+
 
 .boite_populaires{
     height: 700px;
@@ -264,7 +284,9 @@ input::placeholder{
     border-radius: 20px 0 0 20px;
 }
 
+
 /*ACTIVITÉS*/
+
 
 .boite_activites{
     width: 100%;
@@ -298,7 +320,9 @@ gap: 35px;
     border-radius: 20px 20px 0 0 ;
 }
 
+
 /*FOOTER*/
+
 
 .boite_footer{
     justify-content: flex-start;
@@ -322,7 +346,9 @@ gap: 35px;
     margin: 40px 0 40px 0;
 }
 
+
 /*MEDIA QUERIES*/
+
 
 @media screen and (min-width: 992px) and (max-width: 1400px){
 .fa-magnifying-glass{
@@ -334,9 +360,17 @@ gap: 35px;
 /*SMARTPHONES*/
 
 @media screen and(max-width: 768px) {
+
+.header .main{
+    background-color: white;
+} 
     
 .boite_heb_pop{
     flex-direction: column-reverse;
+}
+
+.boite_populaires{
+    background-color: #F2F2F2;
 }
 
 }

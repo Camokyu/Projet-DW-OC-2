@@ -239,6 +239,7 @@ input::placeholder {
   background-color: white;
   border-radius: 20px;
   padding: 5px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0 5px 6px;
 }
 
 .image_hebergements {
@@ -281,6 +282,7 @@ input::placeholder {
   border-radius: 20px;
   margin: 0 40px 25px 37px;
   padding: 5px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0 5px 6px;
 }
 
 .logo_populaires {

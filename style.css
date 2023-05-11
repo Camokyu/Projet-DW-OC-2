@@ -114,7 +114,7 @@ footer {
   border-style: none;
   color: #000000;
   background-color: #f2f2f2;
-  border-radius: 40px 0 0 40px;
+  border-radius: 10px 0 0 10px;
   padding: 11px 15px 13px 20px;
 }
 
@@ -140,7 +140,7 @@ input::placeholder {
   color: #deebff;
   font-weight: 800;
   border: transparent;
-  border-radius: 0 20px 20px 0;
+  border-radius: 0 10px 10px 0;
   padding: 12px;
 }
 
@@ -230,7 +230,7 @@ input::placeholder {
   height: 100%;
   background-color: #f2f2f2;
   border-radius: 20px;
-  margin: 40px;
+  /* margin: 40px; */
   padding: 20px 10px 0 10px;
   gap: 20px;
 }
@@ -248,15 +248,14 @@ input::placeholder {
   border-radius: 20px 20px 0px 0px;
 }
 
-/*.contenu_texte_hebergements{
-
-  gap: 5px
-}*/
+.contenu_texte_hebergements{
+  padding-bottom: 5px;
+}
 
 .afficher_plus {
   width: 100%;
   font-weight: 700;
-  padding: 20px 0 25px 17px;
+  padding: 10px 0 15px 17px;
 }
 
 /*POPULAIRES*/

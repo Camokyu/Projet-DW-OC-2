@@ -4,8 +4,6 @@ body {
   width: 100%;
   max-width: 1400px;
   margin: auto;
-  /* gap: 20px;  MAIS ZUT !! */
-  /*! margin: auto 40px; */
   padding: 0 40px;
 }
 
@@ -29,7 +27,6 @@ h3 {
   font-weight: 700;
   font-size: 16px;
   line-height: 18.78px;
-  /*! padding-left: 15px; */
 }
 
 a {
@@ -50,7 +47,9 @@ footer {
   color: #0065fc;
 }
 
+
 /*HEADER*/
+
 
 .header {
   justify-content: space-between;
@@ -87,20 +86,19 @@ footer {
   height: 19px;
   width: 61.09px;
   margin-top: 20px;
-  /*! padding: 0 0 0 55px; */
 }
 
+
 /*MAIN*/
+
 
 .boite_contenu_main {
   flex-flow: column;
 }
 
-/* .texte_entete {
-  /*! padding: 0 0 0 55px;
-}*/
 
 /*BLOC RECHERCHE*/
+
 
 .bloc_recherche {
   gap: 0px;
@@ -153,18 +151,12 @@ input::placeholder {
   gap: 20px;
   font-weight: 700;
   margin: 25px 0;
-  /*! padding: 0 0 0 25px; */
-  /*! font-size: 15px; */
 }
 
 .ligne_filtres p {
   margin: 5px;
   font-size: 15px;
 }
-
-/* .boite_boutons {
-  /*! gap: 60px;
-} */
 
 .bouton_filtres {
   flex-flow: row;
@@ -184,7 +176,6 @@ input::placeholder {
 .texte_x_dispo {
   align-items: center;
   gap: 5px;
-  /*! padding: 0 0 0 55px; */
 }
 
 .fa-info {
@@ -195,7 +186,9 @@ input::placeholder {
   padding: 5px 10px 5px 10px;
 }
 
+
 /*HÉBERGEMENTS ET POPULAIRES*/
+
 
 .boite_heb_pop {
   justify-content: space-between;
@@ -205,13 +198,8 @@ input::placeholder {
 
 .texte_prix {
   flex-flow: row nowrap;
-  /*! padding-left: 15px; */
   flex: 1;
 }
-
-/* .ligne_etoiles {
-  /*! padding-left: 15px;
-} */
 
 .symbole_euro {
   font-weight: 600;
@@ -221,28 +209,25 @@ input::placeholder {
   color: gainsboro;
 }
 
+
 /*HÉBERGEMENTS*/
+
 
 .titre_hebergements {
   width: 100%;
   line-height: 20px;
-  /*! padding: 10px 0 0 17px; */
 }
 
 .boite_hebergements {
   flex-flow: row wrap;
   justify-content: space-evenly;
   width: 60%;
-  /*! height: 100%; */
   background-color: #f2f2f2;
   border-radius: 20px;
   padding: 20px 10px 0 10px;
-  /*! gap: 20px; */
   padding: 40px;
 }
-/* .carte_hebergements_img_ctn {
-  width: 100%;
-} */
+
 .carte_hebergements {
   background-color: white;
   border-radius: 20px;
@@ -258,10 +243,8 @@ input::placeholder {
 .carte_content_hoz {
   display: flex;
   flex-direction: row;
-  /*! padding: 5px; */
   height: 150px;
   width: 100%;
-  /*! min-width: 0; */
 }
 
 .carte_content_hoz .carte_hebergements_img_ctn {
@@ -291,47 +274,40 @@ input::placeholder {
 .afficher_plus {
   width: 100%;
   font-weight: 700;
-  /*! padding: 10px 0 15px 17px; */
   margin-top: 30px;
 }
 
+
 /*POPULAIRES*/
 
+
 .boite_populaires {
-  /*! height: 100%; */
+
   width: 25%;
   flex-flow: column wrap;
   justify-content: flex-start;
-  /*! align-content: stretch; */  /*Marche pas, M'ÉNERVE*/
   background-color: #f2f2f2;
   border-radius: 20px;
   margin-right: 0px;
   padding: 40px;
-  /*! min-width: 0; */
 }
 
 .titre_populaires {
-  /*! padding-left: 37px; */
   margin: 0;
 }
 
 .carte_populaires {
-  /*! width: 100%; */
   display: block;
   background-color: white;
   align-content: flex-start;
   border-radius: 20px;
-  /*! margin: 0 40px 25px 37px; */
   padding: 5px;
   box-shadow: rgba(0, 0, 0, 0.15) 0 5px 6px;
 }
 
 .logo_populaires {
-  /*! width: 100%; */
   justify-content: space-between;
   align-items: center;
-  /*! padding: 20px 42px 32px 0; */
-  /*! min-width: 0; */
   margin: 0 0 20px 0;
 }
 
@@ -343,39 +319,24 @@ input::placeholder {
 .image_populaires {
   width: 100%;
   height: 100%;
-  /*! border-radius: 20px 0 0 20px; */
   object-fit: cover;
 }
 
 .carte_content_hoz .carte_populaires_img_ctn {
   width: 40%;
-  /*! max-height: 124px; */
-  /*! object-fit: cover; */
-  /*! display: flex; */
   border-radius: 20px 0 0 20px;
   overflow: hidden;
   flex-shrink: 0;
 }
 
-/* .contenu_texte_populaires {
-  flex-flow: column nowrap;
-}
-
-.texte_prix_populaires {
-  padding-left: 15px;
-} */
-
-/* .ligne_etoiles_populaires {
-  padding: 44px 0 16px 15px;
-} */
 
 /*ACTIVITÉS*/
+
 
 .boite_activites {
   width: 100%;
   flex-flow: column nowrap;
   margin: 40px 0;
-  /*! gap: 25px; */
 }
 
 .sous_boite_activites {
@@ -384,7 +345,6 @@ input::placeholder {
 
 .titre_activites {
   width: 100%;
-  /*! margin: 0 0 25px 35px; */
 }
 
 .carte_activites {
@@ -403,11 +363,12 @@ input::placeholder {
   object-fit: cover;
 }
 
+
 /*FOOTER*/
+
 
 .boite_footer {
   justify-content: flex-start;
-  /*! gap: 200px; */
   background-color: #f2f2f2;
   padding: 30px 60px;
 }
@@ -424,6 +385,8 @@ input::placeholder {
   margin: 10px 0;
 }
 
+
+
 .liste_hebergements {
   display: flex;
   flex-flow: wrap;
@@ -434,11 +397,7 @@ input::placeholder {
 .carte_hebergements_img_ctn {
   width: 100%;
   height: 60%;
-  /*! overflow: hidden; */
   display: flex;
-  /*! justify-content: center; */
-  /*! align-content: center; */
-  /*! justify-items: center; */
 }
 .carte_activites > .nom_carte {
   margin: 20px;
@@ -450,8 +409,6 @@ input::placeholder {
   margin: 0;
 }
 .liste_populaires {
-  /*! min-width: 0; */
-  /*! max-width: 100%; */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -464,19 +421,40 @@ input::placeholder {
   padding: 10px 20px;
   display: flex;
   flex-direction: column;
-  /*! min-width: 0; */
 }
-/* .ligne_etoiles_populaires {
-  /*! flex: 1; 
-} */
+
 .contenu_texte_populaires > .nom_carte {
   margin: 6px 0;
 }
 
+
 /*MEDIA QUERIES*/
 
-@media screen and (min-width: 992px) {
+
+/* @media screen and (min-width: 768px) and (max-width: 992px) {
 }
+
+header{
+width: 95%;
+}
+
+body{
+  padding: 0 0 0 40px;
+}
+
+.boite_heb_pop{
+  width: calc(100%-40px);
+  flex-flow: column wrap;
+}
+
+.boite_hebergements{
+  width: 100%;
+}
+
+.boite_populaires{
+  width: 100%;
+} */
+
 
 /*SMARTPHONES*/
 
@@ -537,15 +515,26 @@ input::placeholder {
     background-color: #f2f2f2;
     width: 100%;
     border-radius: 0%;
+    align-self: center;
+  }
+
+  .logo_populaires{
+    width: 90%;
+  }
+
+  .carte_populaires{
+    width: 70%;
   }
 
   .boite_hebergements {
     width: 100%;
-    flex-direction: column;
+    flex-flow: column wrap;
     padding-bottom: 45px;
+    background-color: white;
   }
 
   .carte_hebergements {
+    width: 60%;
     justify-content: center;
   }
 
@@ -557,6 +546,12 @@ input::placeholder {
 
   .sous_boite_activites {
     width: 100%;
+    height: 25%;
     flex-flow: column wrap;
+  }
+
+  .carte_activites{
+    width: 100%;
+    height: 100%;
   }
 }

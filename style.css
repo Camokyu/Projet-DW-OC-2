@@ -4,7 +4,6 @@ body {
   width: 100%;
   max-width: 1400px;
   margin: auto;
-  padding: 0 40px;
 }
 
 * {
@@ -47,9 +46,7 @@ footer {
   color: #0065fc;
 }
 
-
 /*HEADER*/
-
 
 .header {
   justify-content: space-between;
@@ -88,17 +85,13 @@ footer {
   margin-top: 20px;
 }
 
-
 /*MAIN*/
-
 
 .boite_contenu_main {
   flex-flow: column;
 }
 
-
 /*BLOC RECHERCHE*/
-
 
 .bloc_recherche {
   gap: 0px;
@@ -186,9 +179,7 @@ input::placeholder {
   padding: 5px 10px 5px 10px;
 }
 
-
 /*HÉBERGEMENTS ET POPULAIRES*/
-
 
 .boite_heb_pop {
   justify-content: space-between;
@@ -249,9 +240,7 @@ input::placeholder {
   margin: 6px 0;
 }
 
-
 /*HÉBERGEMENTS*/
-
 
 .titre_hebergements {
   width: 100%;
@@ -317,12 +306,9 @@ input::placeholder {
   margin-top: 30px;
 }
 
-
 /*POPULAIRES*/
 
-
 .boite_populaires {
-
   width: 25%;
   flex-flow: column wrap;
   justify-content: flex-start;
@@ -369,9 +355,7 @@ input::placeholder {
   flex-shrink: 0;
 }
 
-
 /*ACTIVITÉS*/
-
 
 .boite_activites {
   width: 100%;
@@ -403,9 +387,7 @@ input::placeholder {
   object-fit: cover;
 }
 
-
 /*FOOTER*/
-
 
 .boite_footer {
   justify-content: flex-start;
@@ -425,38 +407,39 @@ input::placeholder {
   margin: 10px 0;
 }
 
-
 /*MEDIA QUERIES*/
 
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  header {
+    width: 95%;
+  }
 
-/* @media screen and (min-width: 768px) and (max-width: 992px) {
+  body {
+    padding: 0 0 0 40px;
+  }
+
+  .boite_heb_pop {
+    width: calc(100%-40px);
+    flex-flow: column wrap;
+  }
+
+  .boite_hebergements {
+    width: 100%;
+  }
+
+  .boite_populaires {
+    width: 100%;
+  }
 }
-
-header{
-width: 95%;
-}
-
-body{
-  padding: 0 0 0 40px;
-}
-
-.boite_heb_pop{
-  width: calc(100%-40px);
-  flex-flow: column wrap;
-}
-
-.boite_hebergements{
-  width: 100%;
-}
-
-.boite_populaires{
-  width: 100%;
-} */
-
 
 /*SMARTPHONES*/
 
 @media (max-width: 767px) {
+
+  body{
+    max-width: 767px;
+  }
+
   .header .main .boite_hebergements .boite_activites {
     background-color: white;
   }
@@ -480,11 +463,22 @@ body{
     width: 100%;
   }
 
+  .form_recherche {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .barre_recherche {
+    width: 80%;
+    text-align: center;
+  }
+
   .texte_bouton_recherche {
     display: none;
   }
 
-  .bouton_recherche_icone {
+  .bouton_recherche > .bouton_recherche_icone {
     display: inline;
     color: white;
   }
@@ -516,11 +510,11 @@ body{
     align-self: center;
   }
 
-  .logo_populaires{
+  .logo_populaires {
     width: 90%;
   }
 
-  .carte_populaires{
+  .carte_populaires {
     width: 70%;
   }
 
@@ -548,7 +542,7 @@ body{
     flex-flow: column wrap;
   }
 
-  .carte_activites{
+  .carte_activites {
     width: 100%;
     height: 100%;
   }

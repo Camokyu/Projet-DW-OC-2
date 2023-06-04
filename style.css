@@ -128,7 +128,7 @@ footer {
 }
 
 input::placeholder {
-  size: 30px;
+  resize: 30px;
   line-height: 22px;
   color: black;
   font-weight: 800;
@@ -541,15 +541,16 @@ Attention, on appelle uniquement la/les propriété.s souhaitée.s, les autres r
   }
 
   .ligne_filtres p {
-    font-size: 17;
+    font-size: 17px;
   }
 
   .boite_boutons {
     display: flex;
     flex-wrap: wrap;
     align-items: start;
+    justify-content: center;
     width: 100%;
-    gap: 5px;
+    gap: 20px;
   }
 
   .bouton_filtres {
@@ -557,6 +558,15 @@ Attention, on appelle uniquement la/les propriété.s souhaitée.s, les autres r
     flex: 1 0 calc(50% - 5px);
     box-sizing: border-box;
     padding: 10px;
+    max-width: 250px;
+  }
+
+  .bouton_filtres .logo_bouton{
+    min-width: 35px;
+  }
+
+  .bouton_filtres .logo_bouton i{
+    font-size: 22px;
   }
 
   .texte_x_dispo {

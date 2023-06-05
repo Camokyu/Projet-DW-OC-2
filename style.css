@@ -1,19 +1,6 @@
-/* 
-
-rappel du nom de la syntaxe css:
-
-<sélecteur>: {
-  <propriété>: <valeur>
-}
-
-*/
-
 /*NORMES*/
 html {
-  /* 1360px = 1400px - 2 * 20px */
   max-width: 1360px;
-  
-  /* margin auto pour centrer le site */
   margin: 0 auto;
   padding: 0 20px;
 }
@@ -75,7 +62,7 @@ footer {
   margin-bottom: 40px;
 }
 
-.header .menu-list {
+.header .menu_liste {
   margin: 0;
   list-style-type: none;
 }
@@ -128,7 +115,6 @@ footer {
 }
 
 input::placeholder {
-  resize: 30px;
   line-height: 22px;
   color: black;
   font-weight: 800;
@@ -219,14 +205,10 @@ input::placeholder {
   justify-content: space-between;
 }
 
-.carte_hebergements_img_ctn {
+.carte_hebergements_contenu_image {
   width: 100%;
   height: 60%;
   display: flex;
-}
-
-.carte_activites>.nom_carte {
-  margin: 20px;
 }
 
 .texte_prix>p {
@@ -237,26 +219,10 @@ input::placeholder {
   margin: 0;
 }
 
-.liste_populaires {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  gap: 20px;
-}
-
 #ancre_hebergements {
   margin: 0 0 20px 0;
 }
 
-.contenu_texte_populaires {
-  padding: 10px 20px;
-  display: flex;
-  flex-direction: column;
-}
-
-.contenu_texte_populaires>.nom_carte {
-  margin: 6px 0;
-}
 
 /*HÉBERGEMENTS*/
 
@@ -279,7 +245,6 @@ input::placeholder {
   padding: 5px;
   border-radius: 20px;
   width: calc(33% - 20px);
-  /* 20px == le gap du parent*/
   box-shadow: rgba(0, 0, 0, 0.15) 0 5px 6px;
 }
 
@@ -290,7 +255,7 @@ input::placeholder {
   display: flex;
 }
 
-.carte_content_hoz {
+.carte_contenu_horizontal {
   display: flex;
   flex-direction: row;
   height: 150px;
@@ -356,11 +321,28 @@ input::placeholder {
   object-fit: cover;
 }
 
-.carte_content_hoz .carte_populaires_img_ctn {
+.carte_contenu_horizontal .carte_populaires_contenu_image {
   width: 40%;
   border-radius: 20px 0 0 20px;
   overflow: hidden;
   flex-shrink: 0;
+}
+
+.contenu_texte_populaires {
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.contenu_texte_populaires>.nom_carte {
+  margin: 6px 0;
+}
+
+.liste_populaires {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
 }
 
 /*ACTIVITÉS*/
@@ -393,6 +375,10 @@ input::placeholder {
   object-fit: cover;
 }
 
+.carte_activites>.nom_carte {
+  margin: 20px;
+}
+
 /*FOOTER*/
 
 .boite_footer {
@@ -413,9 +399,12 @@ input::placeholder {
   margin: 10px 0;
 }
 
+
 /*MEDIA QUERIES*/
-/* Dans les zones @media on appelle les sélecteurs dont on veut changer les propriétés.
-Attention, on appelle uniquement la/les propriété.s souhaitée.s, les autres resteront inchangées */
+
+
+/*TABLETTES*/
+
 @media (min-width: 768px) and (max-width: 992px) {
 
   body {
@@ -427,8 +416,6 @@ Attention, on appelle uniquement la/les propriété.s souhaitée.s, les autres r
     flex-flow: column;
     align-content: space-between;
     row-gap: 20px;
-
-    /* empêche l'élément d'être plus grand que la boîte dans laquelle il est. */
     box-sizing: border-box;
   }
 
@@ -490,11 +477,11 @@ Attention, on appelle uniquement la/les propriété.s souhaitée.s, les autres r
     padding: 20px 0 0 0;
   }
 
-  .menu-list {
+  .menu_liste {
     padding: 0;
   }
 
-  .menu-list li {
+  .menu_liste li {
     width: 50%;
     float: left;
     box-sizing: border-box;
